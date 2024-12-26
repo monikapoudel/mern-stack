@@ -1,14 +1,17 @@
 import React from 'react'
-// import logo from "./favicon.ico"
-import dashimage from "./Dashboard.png"
+// import logo from "./favicon.ico";
+import dashimage from "./Dashboard.png";
+import amazon from "./amazon.svg";
 
 export default function App() {
   return (
     <div>
       <nav className='bg'>
 
-        <div className='flex items-center justify-betweenw w-8/12 mx-auto bg to-black text-white p-2'>
+        <div className='flex items-center justify-betweenw lg:w-8/12 mx-auto bg to-black text-white p-2'>
           <div>logo</div>
+          <div className='hidden Ig-block'></div>
+
 
           <div className='flex gap-10 font-semibold'>
 
@@ -27,8 +30,8 @@ export default function App() {
         </div>
 
 
-        <div className='w-6/12 mx-auto mt-24 flex flex-col items-center gap-8'>
-          <div className='text-6x1 text-center font-semibold leading-relaxed '>Make Your Business Flourish with<span className='text-orange-500'> Digital Marketing</span></div>
+        <div className='lg:w-6/12 mx-auto mt-24 flex flex-col items-center gap-8'>
+          <div className='text-3xlg:text-6x1 text-center font-semibold leading-relaxed '>Make Your Business Flourish with<span className='text-orange-500'> Digital Marketing</span></div>
           <div className='text-center'>Save time on creating a website from scratch. Use a rich collection of ready-made websites to get your project off to a
             fast start opposed to using 'Content here, content here', making it look like readable English.
 
@@ -51,7 +54,22 @@ export default function App() {
 
         </div>
       </nav>
+      <div className='w-10/12 mx-auto grid grid-cols-6 space-x-16 mt-20'>
+
+        <img src={amazon} alt="" />
+        <img src={amazon} alt="" />
+        <img src={amazon} alt="" />
+        <img src={amazon} alt="" />
+        <img src={amazon} alt="" />
+      </div>
+
+
+
+
     </div>
+
+
+
 
   )
 }
